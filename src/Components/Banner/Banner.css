@@ -1,6 +1,6 @@
 .div_banner {
   align-items: center;
-  background: rgba(0, 0, 0, 0.3) url(../Assets/banner_2.png);
+  background: rgba(0, 0, 0, 0.3) url(../../Assets/banner_2.png);
   background-blend-mode: darken;
   background-repeat: no-repeat;
   background-size: cover;
