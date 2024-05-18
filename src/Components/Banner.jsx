@@ -5,8 +5,12 @@ import '../Components/Banner.scss';
 const Banner = () => {
     return (
         <div className='div_banner'>
-            <img src={banner} alt="Image of a beach coast" />
-            <p className='p_banner-text'>Chez vous, partout et ailleurs</p>
+            <div className='div_banner-image'>
+                {/* <img src={banner} alt="Image of a beach coast" /> */}
+            </div>
+            <div className='div_banner-text'>
+                <p>Chez vous, partout et ailleurs</p>
+            </div>
         </div>
     )
 }

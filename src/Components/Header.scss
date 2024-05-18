@@ -2,23 +2,26 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 30px;
+    // margin: 30px;
+    padding: 50px;
 }
 
 .div_logo img {
-    width: 105.16PX;
+    width: 105.16px;
     height: 34px;
 }
 
-.nav ul {
-    list-style: none;
-    display: inline-flex;
-}
+.nav {
+    li {
+        margin-right: 30px;
+    }
 
-.nav li {
-    margin-right: 30px;
+    ul {
+        list-style: none;
+        display: inline-flex;
+    }
 }
 
 .link_accueil {
-   text-decoration: underline;
+    text-decoration: underline;
 }

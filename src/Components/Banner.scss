@@ -1,16 +1,24 @@
-.div_banner img {
-    border-radius: 10px;
+@import '../Style/Utils/variables';
+
+.div_banner {
+    align-items: center;
+    background: rgba(0, 0, 0, .3) url(../Assets/banner_2.png);
+    background-blend-mode: darken;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 25px;
+    display: flex;
+    height: 115px;
+    justify-content: center;
     position: relative;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.3);
-    height: 120px;
-    width: 95%;
-    margin-top: 20px;
+    width: 92%;
+    margin: auto;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
-.p_banner-text {
-    position: absolute;
-    top: 28%;
-    right: 35%;
+.div_banner-text {
+    font-weight: 700;
+    font-size: 24px;
+    color: $white-text;
 }
-
-
