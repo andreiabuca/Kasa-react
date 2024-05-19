@@ -1,7 +1,7 @@
 .div_footer {
   display: flex;
   flex-direction: column;
-  position: fixed;
   bottom: 0;
   width: 100%;
+  margin-top: 40px;
 }/*# sourceMappingURL=Footer.css.map */
