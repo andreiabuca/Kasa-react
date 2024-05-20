@@ -1,0 +1,61 @@
+@import '../../Style/Utils/variables';
+
+.div_collapse-container {
+    margin: auto;
+    width: 80%;
+    margin-top: 30px;
+}
+
+.collapse {
+    // width: 100%;
+    margin: 20px 0;
+}
+
+.div_collapse-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 30px;
+    padding: 7px 15px;
+    border-radius: 5px;
+    width: 100%;
+    background-color: $primary-color;
+    color: $white-text;
+
+    & h2 {
+        font-size: 18px;
+    }
+}
+
+.div_collapse-content {
+    background-color: $grey-color;
+    border-radius: 5px;
+    //animations
+    transition: opacity 0.4s ease-in-out, height 0.4s 0.4s ease-in-out;
+    overflow: hidden;
+
+    & p {
+        text-align: justify;
+        font-size: 15px;
+        padding: 15px;
+    }
+}
+
+.collapse_arrow-ways {
+    //animations
+    transform: rotate(0deg);
+    transition: transform 0.4s ease-in-out;
+    cursor: pointer;
+}
+
+.rotate {
+    //animations
+    transform: rotate(180deg);
+    transition: transform 0.4s ease-in-out;
+}
+
+.animated {
+    //animations
+    opacity: 1;
+    transition: height 0.4s ease-in-out, opacity 0.4s 0.4s ease-in-out;
+}
