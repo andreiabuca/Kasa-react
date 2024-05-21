@@ -1,16 +1,17 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 import './Cards.scss';
 
 
-const Cards = ({title, cover, description}) => {
+const Cards = ({title, cover, link}) => {
     return (
+        <Link to={link}>
         <div className='div_card-logement'>
             <img src={cover} alt={title} />
-            {/* <div className='div_card-wrapper'> */}
             <h2 className='div_card-title div_card-shadow'>{title}</h2>
-            {/* </div> */}
         </div>
+        </Link>
     )
 }
 

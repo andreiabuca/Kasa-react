@@ -34,14 +34,15 @@ const HomePage = () => {
         <Banner/>
         <div className='div_card-container'>
         {data.map(logement => (
-            <Link to={`/fichelogement/${logement.id}`}>
+            
             <Cards
                 key={logement.id}
                 title={logement.title}
                 cover={logement.cover}
                 description={logement.description}
+                link={`/fichelogement/${logement.id}`}
             />
-            </Link>
+            
         ))}
         </div>
         </>

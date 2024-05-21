@@ -12,9 +12,8 @@
 }
 
 .nav {
-    .link_accueil, .link_apropos {
+    li {
         margin-right: 30px;
-        
     }
 
     ul {
@@ -23,6 +22,11 @@
     }
 }
 
-.link_accueil {
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.active {
     text-decoration: underline;
 }

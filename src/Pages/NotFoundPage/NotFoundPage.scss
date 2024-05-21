@@ -1,0 +1,22 @@
+@import '../../Style/Utils/variables';
+
+.p_error-number {
+    font-size: 170px;
+    font-weight: 700;
+    color: $primary-color;
+}
+
+.p_error-text {
+    color: $primary-color;
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    
+}
+
+.link-error {
+    text-decoration: underline;
+    font-size: 13px;
+    font-weight: 500;
+}
