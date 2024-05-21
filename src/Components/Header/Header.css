@@ -10,10 +10,14 @@
   height: 34px;
 }
 
-.nav li {
+.nav .link_accueil, .nav .link_apropos {
   margin-right: 30px;
 }
 .nav ul {
   list-style: none;
   display: inline-flex;
+}
+
+.link_accueil {
+  text-decoration: underline;
 }/*# sourceMappingURL=Header.css.map */

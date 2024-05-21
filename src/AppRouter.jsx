@@ -7,14 +7,14 @@ import NotFoundPage from './Pages/NotFoundPage/NotFoundPage';
 
 const AppRouter = () => {
     return (
-        <Router>
+        <main>
             <Routes>
                 <Route path='/' element={<HomePage/>}/>
-                <Route path='/fichelogement' element={<FicheLogement/>}/>
+                <Route path='/fichelogement/:id' element={<FicheLogement/>}/>
                 <Route path='/apropos' element={<AproposPage/>}/>
                 <Route path= '*' element={<NotFoundPage/>}/>
             </Routes>
-        </Router>
+        </main>
     );
 };
 

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import {Link} from 'react-router-dom';
 import Banner from '../../Components/Banner/Banner';
 import Cards from '../../Components/Cards/Cards';
 import './HomePage.scss';
@@ -33,12 +34,14 @@ const HomePage = () => {
         <Banner/>
         <div className='div_card-container'>
         {data.map(logement => (
+            <Link to={`/fichelogement/${logement.id}`}>
             <Cards
                 key={logement.id}
                 title={logement.title}
                 cover={logement.cover}
                 description={logement.description}
             />
+            </Link>
         ))}
         </div>
         </>
