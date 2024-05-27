@@ -1,0 +1,12 @@
+.div_tags-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  margin-top: 20px;
+}
+
+.tag-button {
+  display: flex;
+  justify-content: space-evenly;
+  margin-right: 10px;
+}/*# sourceMappingURL=Tag.css.map */

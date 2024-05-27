@@ -1,0 +1,53 @@
+@import '../../Style/Utils/variables';
+
+.sec_fiche-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.div_info-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px;
+}
+
+.div_location-container h1 {
+    font-weight: 500;
+    font-size: 30px;
+    color: $primary-color;
+    // display: flex;
+    // flex-direction: unset;
+}
+
+.div_location-container p {
+    margin-top: 10px;
+    font-weight: 500;
+    font-size: 15px;
+    display: flex;
+    flex-direction: unset;
+}
+
+.div_left-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+}
+
+.div_right-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.div_host-container {
+    display: flex;
+    align-items: center;
+}
+
+.div_collapse-fiche-container {
+    display: flex;
+    justify-content: space-between;
+    width: 92%;
+}

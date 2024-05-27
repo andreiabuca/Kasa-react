@@ -1,0 +1,22 @@
+.aside_host-container {
+  align-items: center;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  margin-right: 30px;
+}
+
+.host-picture {
+  height: 70px;
+  width: 70px;
+}
+.host-picture img {
+  border-radius: 50%;
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+.host-name {
+  width: 100%;
+}/*# sourceMappingURL=Host.css.map */

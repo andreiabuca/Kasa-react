@@ -1,1 +1,43 @@
-/*# sourceMappingURL=FicheLogement.css.map */
+.sec_fiche-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.div_info-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 20px;
+}
+
+.div_location-container h1 {
+  font-weight: 500;
+  font-size: 30px;
+  color: rgb(255, 96, 96);
+}
+
+.div_location-container p {
+  margin-right: 108px;
+  margin-top: 10px;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.div_left-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 30px;
+}
+
+.div_right-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.div_host-container {
+  display: flex;
+  align-items: center;
+}/*# sourceMappingURL=FicheLogement.css.map */
