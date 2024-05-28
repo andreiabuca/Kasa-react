@@ -1,9 +1,21 @@
 @import '../../Style/Utils/variables';
 
+.div_error-container {
+    @media (max-width:$breakpoint-mobile) {
+        padding: 50px;
+    }
+}
+
 .p_error-number {
     font-size: 170px;
     font-weight: 700;
     color: $primary-color;
+    display: flex;
+    justify-content: center;
+
+    @media (max-width:$breakpoint-mobile) {
+        font-size: 80px;
+    }
 }
 
 .p_error-text {
@@ -12,11 +24,23 @@
     font-weight: 500;
     margin-top: 5%;
     margin-bottom: 5%;
-    
+    display: flex;
+    justify-content: center;
+
+    @media (max-width:$breakpoint-mobile) {
+        text-align: center;
+        margin-top: 100px;
+    }
 }
 
 .link-error {
     text-decoration: underline;
     font-size: 13px;
     font-weight: 500;
+    display: flex;
+    justify-content: center;
+
+    @media (max-width:$breakpoint-mobile) {
+        margin-top: 100px;
+    }
 }
