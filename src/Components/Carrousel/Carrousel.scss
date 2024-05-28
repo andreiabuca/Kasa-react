@@ -41,6 +41,10 @@
     height: 40px;
     z-index: 10;
     cursor: pointer;
+
+    @media (max-width:$breakpoint-mobile) {
+        right: 91%;       
+    }
 }
 
 .arrow-right {

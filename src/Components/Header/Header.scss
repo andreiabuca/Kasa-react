@@ -1,9 +1,14 @@
+@import '../../Style/Utils/variables';
+
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    // margin: 30px;
-    padding: 50px;
+    margin: 5%;
+
+    @media (max-width:$breakpoint-mobile) {
+        margin-right: 0;       
+    }
 }
 
 .div_logo img {
@@ -12,6 +17,10 @@
 }
 
 .nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    
     li {
         margin-right: 30px;
     }
@@ -19,6 +28,10 @@
     ul {
         list-style: none;
         display: inline-flex;
+
+        @media (max-width:$breakpoint-mobile) {
+            text-transform: uppercase;
+        }
     }
 }
 

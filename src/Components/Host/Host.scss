@@ -1,9 +1,15 @@
+@import '../../Style/Utils/variables';
+
 .aside_host-container {
     align-items: center;
     display: flex;
     justify-content: flex-end;
     width: 100%;
     margin-right: 30px;
+
+    @media (max-width:$breakpoint-mobile) {
+        margin-right: 0;       
+    }
 }
 
 .host-picture {
