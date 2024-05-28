@@ -40,6 +40,7 @@ const FicheLogement = () => {
 
     const equipments = sellectedAppart.equipments;
     const description = sellectedAppart.description;
+    const numericRating = Number(sellectedAppart.rating)
 
     return (
         <div className='sec_fiche-container'>
@@ -58,7 +59,8 @@ const FicheLogement = () => {
                     <div className='div_host-container'>
                         <Host name={sellectedAppart.host.name} picture={sellectedAppart.host.picture} />
                     </div>
-                    <Rating rating={sellectedAppart.rating} />
+                    {/* <Rating rating={sellectedAppart.rating} /> */}
+                    <Rating rating={numericRating} />
                 </div>
             </div>
 
