@@ -1,12 +1,15 @@
 .div_tags-container {
   display: flex;
-  flex-wrap: wrap;
-  align-items: baseline;
-  margin-top: 20px;
 }
 
 .tag-button {
-  display: flex;
-  justify-content: space-evenly;
+  border-radius: 5px;
+  background: rgb(255, 96, 96);
+  color: rgb(255, 255, 255);
+  font-size: 15px;
+  font-weight: 500;
+  height: 22px;
   margin-right: 10px;
+  margin-top: 4%;
+  padding: 2px 10px 0;
 }/*# sourceMappingURL=Tag.css.map */

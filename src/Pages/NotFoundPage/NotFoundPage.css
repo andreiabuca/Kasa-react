@@ -1,7 +1,20 @@
+@media (max-width: 768px) {
+  .div_error-container {
+    padding: 50px;
+  }
+}
+
 .p_error-number {
   font-size: 170px;
   font-weight: 700;
   color: rgb(255, 96, 96);
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 768px) {
+  .p_error-number {
+    font-size: 80px;
+  }
 }
 
 .p_error-text {
@@ -10,10 +23,25 @@
   font-weight: 500;
   margin-top: 5%;
   margin-bottom: 5%;
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 768px) {
+  .p_error-text {
+    text-align: center;
+    margin-top: 100px;
+  }
 }
 
 .link-error {
   text-decoration: underline;
   font-size: 13px;
   font-weight: 500;
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 768px) {
+  .link-error {
+    margin-top: 100px;
+  }
 }/*# sourceMappingURL=NotFoundPage.css.map */

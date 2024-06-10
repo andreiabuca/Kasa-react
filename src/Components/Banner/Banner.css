@@ -7,7 +7,7 @@
   background-position: center;
   border-radius: 25px;
   display: flex;
-  height: 115px;
+  height: 150px;
   justify-content: center;
   position: relative;
   width: 92%;
@@ -19,4 +19,10 @@
   font-weight: 700;
   font-size: 24px;
   color: rgb(255, 255, 255);
+}
+@media (max-width: 768px) {
+  .div_banner-text p {
+    text-align: left;
+    margin: 10px;
+  }
 }/*# sourceMappingURL=Banner.css.map */

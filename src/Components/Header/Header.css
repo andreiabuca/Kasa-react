@@ -2,7 +2,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 50px;
+  margin: 5%;
+}
+@media (max-width: 768px) {
+  .header {
+    margin-right: 0;
+  }
 }
 
 .div_logo img {
@@ -10,12 +15,22 @@
   height: 34px;
 }
 
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
 .nav li {
   margin-right: 30px;
 }
 .nav ul {
   list-style: none;
   display: inline-flex;
+}
+@media (max-width: 768px) {
+  .nav ul {
+    text-transform: uppercase;
+  }
 }
 
 a {

@@ -2,7 +2,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px;
 }
 
 .div_info-container {
@@ -11,18 +10,37 @@
   width: 100%;
   padding: 20px;
 }
+@media (max-width: 768px) {
+  .div_info-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px;
+  }
+}
 
 .div_location-container h1 {
   font-weight: 500;
   font-size: 30px;
   color: rgb(255, 96, 96);
 }
+@media (max-width: 768px) {
+  .div_location-container h1 {
+    text-align: left;
+  }
+}
 
 .div_location-container p {
-  margin-right: 108px;
   margin-top: 10px;
   font-weight: 500;
   font-size: 15px;
+  display: flex;
+  flex-direction: unset;
+}
+@media (max-width: 768px) {
+  .div_location-container p h1 {
+    text-align: left;
+  }
 }
 
 .div_left-container {
@@ -30,14 +48,42 @@
   flex-direction: column;
   margin-left: 30px;
 }
+@media (max-width: 768px) {
+  .div_left-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+  }
+}
 
 .div_right-container {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
 }
+@media (max-width: 768px) {
+  .div_right-container {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    margin-top: 20px;
+  }
+}
 
 .div_host-container {
   display: flex;
   align-items: center;
+}
+
+.div_collapse-fiche-container {
+  display: flex;
+  justify-content: space-between;
+  width: 92%;
+}
+@media (max-width: 768px) {
+  .div_collapse-fiche-container {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+  }
 }/*# sourceMappingURL=FicheLogement.css.map */

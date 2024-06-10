@@ -5,10 +5,16 @@
   width: 100%;
   margin-right: 30px;
 }
+@media (max-width: 768px) {
+  .aside_host-container {
+    margin-right: 0;
+  }
+}
 
 .host-picture {
-  height: 70px;
-  width: 70px;
+  margin-left: 10px;
+  height: 60px;
+  width: 60px;
 }
 .host-picture img {
   border-radius: 50%;
@@ -18,5 +24,11 @@
 }
 
 .host-name {
-  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  text-align: right;
+  font-size: 15px;
+  font-weight: 500;
+  width: 63px;
 }/*# sourceMappingURL=Host.css.map */
