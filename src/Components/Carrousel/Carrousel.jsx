@@ -8,11 +8,19 @@ const Carrousel = ({ pictures }) => {
     const [currentIndex, setCurrentIndex] = useState(0);
 
     const nextSlide = () => {
-        setCurrentIndex((prevIndex) => (prevIndex + 1) % pictures.length);
+        if (currentIndex === pictures.length - 1) {
+            setCurrentIndex(0);
+        } else {
+            setCurrentIndex((prevIndex) => prevIndex + 1);
+        }
     };
 
     const prevSlide = () => {
-        setCurrentIndex((prevIndex) => (prevIndex - 1 + pictures.length) % pictures.length);
+        if (currentIndex === 0) {
+            setCurrentIndex(pictures.length - 1);
+        } else {
+            setCurrentIndex((prevIndex) => prevIndex - 1);
+        }
     };
 
     return (
@@ -23,12 +31,12 @@ const Carrousel = ({ pictures }) => {
                     <img src={ArrowRight} alt="Right arrow" className='arrow-right' onClick={nextSlide} />
 
                     <div className='div_slide-count'>
-                        {currentIndex + 1} / {pictures.length}
+                        {currentIndex + 1} / {pictures.length} 
                     </div>
                 </>
             )}
             <div className='slides'>
-            <img src={pictures[currentIndex]} alt={`Slide ${currentIndex + 1}`} />
+                <img src={pictures[currentIndex]} alt={`Slide ${currentIndex + 1}`} />
             </div>
         </section>
     );
