@@ -60,6 +60,33 @@
     transition: height 0.4s ease-in-out, opacity 0.4s 0.4s ease-in-out;
 }
 
+.collapse-inner-content {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    transform: translateY(-20px); 
+}
+
+.collapse-inner-content.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.collapse-inner-content.hidden {
+    opacity: 0;
+    transform: translateY(-20);
+}
+
+.div_collapse-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-in-out;
+}
+
+.div_collapse-content.open {
+    max-height: 1000px;
+}
+
+
 //Fichelogement collapse
 
 .fiche-collapse {
