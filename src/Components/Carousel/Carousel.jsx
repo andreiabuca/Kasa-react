@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import ArrowLeft from '../../Assets/Vector-left.png';
 import ArrowRight from '../../Assets/Vector-right.png';
-import './Carrousel.scss';
+import './Carousel.scss';
 
-const Carrousel = ({ pictures }) => {
+const Carousel = ({ pictures }) => {
     const [currentIndex, setCurrentIndex] = useState(0);
 
     const nextSlide = () => {
@@ -42,9 +42,9 @@ const Carrousel = ({ pictures }) => {
     );
 };
 
-Carrousel.propTypes = {
+Carousel.propTypes = {
     pictures: PropTypes.arrayOf(PropTypes.string),
 };
 
-export default Carrousel;
+export default Carousel;
 

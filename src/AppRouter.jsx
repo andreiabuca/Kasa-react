@@ -1,8 +1,8 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import HomePage from './Pages/HomePage/HomePage';
-import FicheLogement from './Pages/FicheLogement/FicheLogement';
-import AproposPage from './Pages/AproposPage/AproposPage';
+import ApartmentPage from './Pages/ApartmentPage/ApartmentPage';
+import AboutPage from './Pages/AboutPage/AboutPage';
 import NotFoundPage from './Pages/NotFoundPage/NotFoundPage';
 
 const AppRouter = () => {
@@ -10,8 +10,8 @@ const AppRouter = () => {
         <main>
             <Routes>
                 <Route path='/' element={<HomePage/>}/>
-                <Route path='/fichelogement/:id' element={<FicheLogement/>}/>
-                <Route path='/apropos' element={<AproposPage/>}/>
+                <Route path='/apartmentpage/:id' element={<ApartmentPage/>}/>
+                <Route path='/aboutpage' element={<AboutPage/>}/>
                 <Route path= '*' element={<NotFoundPage/>}/>
             </Routes>
         </main>

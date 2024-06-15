@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import {Link} from 'react-router-dom';
 import Banner from '../../Components/Banner/Banner';
-import Cards from '../../Components/Cards/Cards';
+import Card from '../../Components/Card/Card';
 import './HomePage.scss';
 
 const HomePage = () => {
@@ -35,12 +35,12 @@ const HomePage = () => {
         <div className='div_card-container'>
         {data.map(logement => (
             
-            <Cards
+            <Card
                 key={logement.id}
                 title={logement.title}
                 cover={logement.cover}
                 description={logement.description}
-                link={`/fichelogement/${logement.id}`}
+                link={`/apartmentpage/${logement.id}`}
             />
             
         ))}

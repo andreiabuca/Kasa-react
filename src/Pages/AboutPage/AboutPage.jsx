@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import BannerApropos from '../../Components/BannerApropos/BannerApropos';
+import BannerAbout from '../../Components/BannerAbout/BannerAbout';
 import Collapse from '../../Components/Collapse/Collapse';
 
-const AproposPage = () => {
+const AboutPage = () => {
     const [collapses, setCollapses] = useState([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
@@ -28,7 +28,7 @@ const AproposPage = () => {
 
     return (
         <>
-            <BannerApropos />
+            <BannerAbout />
             <div className='div_collapse-container'>
                 {collapses.map((collapseItem, index) => (
                     <Collapse 
@@ -42,4 +42,4 @@ const AproposPage = () => {
     );
 };
 
-export default AproposPage;
+export default AboutPage;

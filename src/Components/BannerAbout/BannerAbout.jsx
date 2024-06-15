@@ -1,7 +1,7 @@
 import React from 'react'; 
-import './BannerApropos.scss';
+import './BannerAbout.scss';
 
-const BannerApropos = () => {
+const BannerAbout = () => {
     return (
         <div className='div_banner-apropos'>
             <div className='div_banner-image-apropos'>
@@ -10,4 +10,4 @@ const BannerApropos = () => {
     )
 }
 
-export default BannerApropos;
+export default BannerAbout;

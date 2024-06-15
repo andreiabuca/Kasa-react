@@ -1,14 +1,14 @@
 import React, { useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import axios from 'axios';
-import Carrousel from '../../Components/Carrousel/Carrousel';
+import Carousel from '../../Components/Carousel/Carousel';
 import Tag from '../../Components/Tag/Tag';
 import Host from '../../Components/Host/Host';
 import Rating from '../../Components/Rating/Rating';
 import Collapse from '../../Components/Collapse/Collapse';
-import './FicheLogement.scss';
+import './ApartmentPage.scss';
 
-const FicheLogement = () => {
+const ApartmentPage = () => {
     const params = useParams();
     const navigate = useNavigate();
 
@@ -44,7 +44,7 @@ const FicheLogement = () => {
 
     return (
         <div className='sec_fiche-container'>
-            <Carrousel pictures={sellectedAppart.pictures} />
+            <Carousel pictures={sellectedAppart.pictures} />
 
             <div className='div_info-container'>
                 <div className='div_left-container'>
@@ -72,4 +72,4 @@ const FicheLogement = () => {
     );
 };
 
-export default FicheLogement;
+export default ApartmentPage;
