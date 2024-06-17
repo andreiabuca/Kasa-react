@@ -47,4 +47,3 @@ Carousel.propTypes = {
 };
 
 export default Carousel;
-

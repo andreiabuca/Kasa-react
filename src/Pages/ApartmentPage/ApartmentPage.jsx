@@ -59,7 +59,6 @@ const ApartmentPage = () => {
                     <div className='div_host-container'>
                         <Host name={sellectedAppart.host.name} picture={sellectedAppart.host.picture} />
                     </div>
-                    {/* <Rating rating={sellectedAppart.rating} /> */}
                     <Rating rating={numericRating} />
                 </div>
             </div>
